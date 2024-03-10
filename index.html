@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cals">
+            <input type="text" id="inputext" placeholder="0">
+            <button id="clear" onclick="clr()">C</button>
+            <button id="delete" onclick="del()">Del</button>
+            <button onclick="off()">OFF</button>
+            <button value="/" onclick="saveOperator('/')">/</button>
+            <button id="num" onclick="number('7')">7</button>
+            <button id="num" onclick="number('8')">8</button>
+            <button id="num" onclick="number('9')">9</button>
+            <button value="*" onclick="saveOperator('*')">*</button>
+            <button id="num" onclick="number('4')">4</button>
+            <button id="num" onclick="number('5')">5</button>
+            <button id="num" onclick="number('6')">6</button>
+            <button value="-" onclick="saveOperator('-')">-</button>
+            <button id="num" onclick="number('1')">1</button>
+            <button id="num" onclick="number('2')">2</button>
+            <button id="num" onclick="number('3')">3</button>
+            <button value="+" onclick="saveOperator('+')">+</button>
+            <button id="num" onclick="number('0')">0</button>
+            <button id="num" onclick="number('00')">00</button>
+            <button class="equal" onclick="calculate('=')">=</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
